@@ -1,4 +1,13 @@
-.claude/ 
-.claude 
-.claude/ 
-.claude 
+# Claude config
+.claude/
+.claude
+
+# Sensitive animal data — kept local only, never committed
+data/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
