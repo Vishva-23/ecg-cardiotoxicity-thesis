@@ -1,117 +1,117 @@
 animal_id,file,status,beats,HR_bpm,base_start,base_end,duration_s,rule_used,ecg_column,inverted,start_annotation,end_annotation
-109,2024_11_01_109.txt,FAILED_PEAKS,2,1000.0,2591854,2651854,60.0,C_long_baseline,3,False,#*       15 min baseline start,#1       15 min baseline end
-120,2024_11_14_120.txt,FAILED_PEAKS,0,,29899,47249,17.35,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
-107,2024_11_01_107.txt,NEEDS_REVIEW,63,140.2926534922311,303059,333059,30.0,D_single_30s,3,False,#* ecg,
-111,2024_11_13_111.txt,NEEDS_REVIEW,67,263.59581974306064,266349,281449,15.1,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
-112,2024_11_13_112.txt,NEEDS_REVIEW,49,175.3638190342812,37449,54799,17.35,A_same_*,3,True,#* ecg baseline,#* ecg baseline end
-113,2024_11_13_113.txt,NEEDS_REVIEW,19,85.20710059171599,108599,122249,13.65,A_same_*,3,True,#* ecgbaseline,#* ecgbaseline end
-114,2024_11_114.txt,NEEDS_REVIEW,28,265.79163248564396,37599,54099,16.5,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
-121,2024_11_14_121.txt,NEEDS_REVIEW,29,135.69178580082385,53999,67499,13.5,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
-101,2024_11_01_101.txt,OK,184,367.4944775420042,472364,502364,30.0,D_single_30s,3,True,#1 ecg,
-102,2024_11_01_102.txt,OK,128,437.3027259684361,83509,113509,30.0,D_single_30s,3,True,#* ecg,
-105,2024_11_01_105.txt,OK,289,448.66801682505064,69099,107949,38.85,A_same_3,3,False,#3 ecg baseline 2,#3 ecg baseline 2 done
-106,2024_11_01_106.txt,OK,246,493.0238797960826,24999,54999,30.0,D_single_30s,3,False,#* ecg,
-108,2024_11_01_108.txt,OK,228,454.86424205991386,133649,163649,30.0,D_single_30s,3,False,#* baseline ecg,
-115,2024_11_13_115.txt,OK,295,329.3379634815728,66804,121014,54.21,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
+109,2024_11_01_109.txt,NEEDS_REVIEW,171,170.75416422532854,2591854,2651854,60.0,C_long_baseline,3,False,#*       15 min baseline start,#1       15 min baseline end
+111,2024_11_13_111.txt,NEEDS_REVIEW,72,283.584076687525,266349,281449,15.1,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
+113,2024_11_13_113.txt,NEEDS_REVIEW,46,213.0009466708741,108599,122249,13.65,A_same_*,3,True,#* ecgbaseline,#* ecgbaseline end
+114,2024_11_114.txt,NEEDS_REVIEW,56,205.35158680771625,37599,54099,16.5,A_same_*,3,True,#* ecg baseline,#* ecg baseline end
+120,2024_11_14_120.txt,NEEDS_REVIEW,27,93.08986752595776,29899,47249,17.35,A_same_*,3,True,#* ecg baseline,#* ecg baseline end
+121,2024_11_14_121.txt,NEEDS_REVIEW,26,124.81278082875686,53999,67499,13.5,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
+101,2024_11_01_101.txt,OK,196,400.3010811550568,472364,502364,30.0,D_single_30s,3,False,#1 ecg,
+102,2024_11_01_102.txt,OK,180,366.9285958319098,83509,113509,30.0,D_single_30s,3,False,#* ecg,
+105,2024_11_01_105.txt,OK,291,450.91738364258316,69099,107949,38.85,A_same_3,3,False,#3 ecg baseline 2,#3 ecg baseline 2 done
+106,2024_11_01_106.txt,OK,232,464.851086664878,24999,54999,30.0,D_single_30s,3,False,#* ecg,
+107,2024_11_01_107.txt,OK,150,303.06112071595646,303059,333059,30.0,D_single_30s,3,False,#* ecg,
+108,2024_11_01_108.txt,OK,231,460.8756637611462,133649,163649,30.0,D_single_30s,3,False,#* baseline ecg,
+112,2024_11_13_112.txt,OK,87,313.7731833384007,37449,54799,17.35,A_same_*,3,True,#* ecg baseline,#* ecg baseline end
+115,2024_11_13_115.txt,OK,408,454.90108416228907,66804,121014,54.21,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
 116,2024_11_14_116.txt,OK,105,530.5220200646149,38804,50804,12.0,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
-117,2024_11_14_117.txt,OK,131,386.7512891709639,36349,56699,20.35,B_cross,3,False,#* ecg baseline,#2 ecg baseline end
-119,2024_11_01_119.txt,OK,250,583.0243902439024,64349,90049,25.7,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
+117,2024_11_14_117.txt,OK,114,336.1927902018149,36349,56699,20.35,B_cross,3,False,#* ecg baseline,#2 ecg baseline end
+119,2024_11_01_119.txt,OK,248,578.3414634146342,64349,90049,25.7,A_same_*,3,False,#* ecg baseline,#* ecg baseline end
 122,2024_11_14_122.txt,OK,132,551.656372824256,27249,41599,14.35,A_same_*,3,False,#* ecg start,#* ecg stop
-123,2024_11 _14_123.txt,OK,308,507.5638588079689,82849,119249,36.4,A_same_*,3,False,#* ecg start,#* ecg end
-124,2024_11_13_124.txt,OK,130,489.0686212561607,25349,41249,15.9,A_same_*,1,False,#* ecg baseline,#* ecg baseline stop
+123,2024_11 _14_123.txt,OK,305,502.60395139290733,82849,119249,36.4,A_same_*,3,False,#* ecg start,#* ecg end
+124,2024_11_13_124.txt,OK,132,496.65108050044233,25349,41249,15.9,A_same_*,1,False,#* ecg baseline,#* ecg baseline stop
 125,2024 11 14 125.txt,OK,94,500.3586800573888,18099,29299,11.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-126,2024_11_15_126.txt,OK,162,326.35135135135135,48449,78449,30.0,D_single_30s,1,False,#* ecg baseline,
-127,2024_11_15_127.txt,OK,115,559.7839430395286,178449,190949,12.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-128,2024_11_15_128.txt,OK,144,553.5483870967743,25155,40705,15.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-129,2024_11_15_129.txt,OK,130,534.8628291064888,50699,65199,14.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-130,2024 11 15 130.txt,OK,567,518.5841248511132,20799,86299,65.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-131,2024_11_18_131.txt,OK,233,469.8099834621485,23249,53249,30.0,D_single_30s,1,False,#* ecg baseline,
+126,2024_11_15_126.txt,OK,225,452.41862187363245,48449,78449,30.0,D_single_30s,1,False,#* ecg baseline,
+127,2024_11_15_127.txt,OK,115,559.6923328696506,178449,190949,12.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+128,2024_11_15_128.txt,OK,144,553.584102200142,25155,40705,15.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+129,2024_11_15_129.txt,OK,127,524.5992644507668,50699,65199,14.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+130,2024 11 15 130.txt,OK,565,516.7595632587615,20799,86299,65.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+131,2024_11_18_131.txt,OK,230,461.95743536294253,23249,53249,30.0,D_single_30s,1,False,#* ecg baseline,
 132,2024_11_18_132.txt,OK,110,565.7439446366782,154399,166049,11.65,A_same_*,1,False,#* baseline,#* baseline end
 133,2024_11_18_133.txt,OK,280,557.2569906790945,36699,66899,30.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-134,2024_11_18_134.txt,OK,897,614.3017117261238,255199,342799,87.6,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+134,2024_11_18_134.txt,OK,873,597.8472015906026,255199,342799,87.6,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 135,2024_11_18_135.txt,OK,175,514.9960536700868,78449,98849,20.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 136,2024_11_18_136.txt,OK,297,595.6932984503925,61799,91799,30.0,D_single_30s,1,False,#* ecg baseline,
 137,2024_11_18_137.txt,OK,170,569.9190647482014,41149,58999,17.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 138,2024_11_18_138.txt,OK,152,530.6313693334895,46649,63799,17.15,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-139,2024_11_18_139.txt,OK,324,603.3999626377732,29299,61499,32.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+139,2024_11_18_139.txt,OK,368,685.5968615729498,29299,61499,32.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 140,2024_11_18_140.txt,OK,159,574.4062045564712,74849,91499,16.65,A_same_*,1,True,#* baseline,#* baseline end
-141,2024_11_18_141.txt,OK,635,489.60049423393735,25099,102949,77.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+141,2024_11_18_141.txt,OK,635,489.6067958041058,25099,102949,77.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 142,2024_11_18_142.txt,OK,170,517.0303895574139,22099,41749,19.65,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-143,2024_11_19_143.txt,OK,271,553.5433608966035,41899,71299,29.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-144,2024_11_19_144.txt,OK,758,585.0378690298315,31349,109099,77.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+143,2024_11_19_143.txt,OK,271,553.5622757560226,41899,71299,29.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+144,2024_11_19_144.txt,OK,756,583.4921943428307,31349,109099,77.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 145,2024_11_19_145.txt,OK,133,442.6559356136821,13349,31349,18.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 146,2024_11_19_146.txt,OK,145,405.6528475515282,69549,90999,21.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-147,2024_11_19_147.txt,OK,128,534.6242896232372,162749,177249,14.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+147,2024_11_19_147.txt,OK,127,530.377437912165,162749,177249,14.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 148,2024_11_19_148.txt,OK,209,422.0065600378724,40149,69949,29.8,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-149,2024_11_19_149.txt,OK,159,387.2549019607843,64299,88899,24.6,A_same_*,1,False,#* baseline ecg,#* baseline ecg end
+149,2024_11_19_149.txt,OK,158,384.80392156862746,64299,88899,24.6,A_same_*,1,False,#* baseline ecg,#* baseline ecg end
 150,2024_11_19_150.txt,OK,163,476.54066774525666,21549,42049,20.5,A_same_*,1,False,#* baseline ecg,#* baseline ecg end
-151,2024_11_26_151.txt,OK,152,409.9918544664676,64149,86499,22.35,A_same_*,1,False,#* baseline,#* baseline end
+151,2024_11_26_151.txt,OK,125,343.585480742588,64149,86499,22.35,A_same_*,1,False,#* baseline,#* baseline end
 152,2024_11_26_152.txt,OK,149,570.2543025944002,20749,36399,15.65,A_same_*,1,False,#* baseline,#* baseline end
-153,2024_11_26_153.txt,OK,306,491.55228450938785,30749,68049,37.3,A_same_*,1,False,#* baseline,#* baseline end
+153,2024_11_26_153.txt,OK,305,489.9406376749308,30749,68049,37.3,A_same_*,1,False,#* baseline,#* baseline end
 154,2024_11_26_154.txt,OK,191,562.2965374371116,19199,39599,20.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-155,2024_11_26_155.txt,OK,149,537.3351083141716,21399,37999,16.6,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-156,2024_11_26_156.txt,OK,178,458.23265447014154,104799,128049,23.25,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-157,2024_11_26_157.txt,OK,154,587.708066581306,86899,102649,15.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+155,2024_11_26_155.txt,OK,149,537.0751179387928,21399,37999,16.6,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+156,2024_11_26_156.txt,OK,178,459.780067538315,104799,128049,23.25,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+157,2024_11_26_157.txt,OK,152,582.4119310876832,86899,102649,15.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 158,2024_11_26_158.txt,OK,234,520.5734500093092,23649,50699,27.05,A_same_*,1,False,#* baseline,#* baseline end
-159,2024_11_26_159.txt,OK,228,504.220346512661,28299,55349,27.05,A_same_*,1,False,#* baseline,#* baseline end
-160,2024_11_26_160.txt,OK,423,535.82765480171,16499,63799,47.3,A_same_*,1,False,#* baseline,#* baseline end
+159,2024_11_26_159.txt,OK,229,506.68543279380714,28299,55349,27.05,A_same_*,1,False,#* baseline,#* baseline end
+160,2024_11_26_160.txt,OK,428,542.1419049029773,16499,63799,47.3,A_same_*,1,False,#* baseline,#* baseline end
 201,2024_12_14_201.txt,OK,208,499.2964824120603,94599,119599,25.0,A_same_*,2,False,#* ecg baseline,#* ecg baseline end
 202,2024_12_14_202.txt,OK,214,541.8468583057746,37599,61299,23.7,A_same_1,1,False,#1 ecg baseline,#1 ecg baseline end
-203,2024_12_14_203.txt,OK,225,534.7551028528229,71399,96599,25.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+203,2024_12_14_203.txt,OK,228,541.9385643800732,71399,96599,25.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 204,2024_12_14_204.txt,OK,278,567.4097845754669,143599,172949,29.35,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 205,2024_12_14_205.txt,OK,190,466.4747017688194,132599,156949,24.35,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 206,2024_12_14_206.txt,OK,215,531.3250020690226,29499,53849,24.35,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 207,2024_12_14_207.txt,OK,193,494.2933150261735,46149,69549,23.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 208,2024_12_14_208.txt,OK,247,512.1621152711753,36099,64949,28.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 209,2024_12_14_209.txt,OK,164,487.7075749264449,74449,94549,20.1,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-210,2024_12_14_210.txt,OK,191,605.3204481495247,33399,52499,19.1,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+210,2024_12_14_210.txt,OK,190,605.3165367780506,33399,52499,19.1,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 211,2024_12_14_211.txt,OK,613,492.37700631562006,32699,107399,74.7,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 212,2024_12_14_212.txt,OK,200,517.6899063475546,39199,62599,23.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 213,2024_12_14_213.txt,OK,241,604.9403461603092,31049,54949,23.9,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-214,2024_12_14_214.txt,OK,188,504.15636935520104,30249,52599,22.35,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-215,2024_12_14_215.txt,OK,322,530.4469966124102,73299,109699,36.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-216,2024_12_14_216.txt,OK,164,515.5236940593537,83899,102899,19.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+214,2024_12_14_214.txt,OK,189,506.85239272073693,30249,52599,22.35,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+215,2024_12_14_215.txt,OK,325,535.4044451788812,73299,109699,36.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+216,2024_12_14_216.txt,OK,164,515.5508697944123,83899,102899,19.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 217,2024_12_14_217.txt,OK,212,626.3295898679067,11799,32049,20.25,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 218,2024_12_14_218.txt,OK,245,529.0737595316396,24749,52449,27.7,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-219,2024_12_14_219.txt,OK,249,556.6778900112233,19449,46199,26.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+219,2024_12_14_219.txt,OK,250,558.9225589225589,19449,46199,26.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 220,2024_12_14_220.txt,OK,153,525.830258302583,60249,77699,17.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 221,2024_12_17_221.txt,OK,142,516.7990226023213,55749,72199,16.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 222,2024_12_17_222.txt,OK,152,512.9947341600135,24099,41899,17.8,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 223,2024_12_17_223.txt,OK,145,501.56739811912223,32599,49899,17.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-224,2024_12_17_224.txt,OK,196,619.1458961739959,154449,173399,18.95,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-225,2024_12_17_225.txt,OK,145,468.3942318117749,86099,104649,18.55,A_same_1,1,False,#1 ecg baseline,#1 ecg baseline end
+224,2024_12_17_224.txt,OK,196,619.2114315956602,154449,173399,18.95,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+225,2024_12_17_225.txt,OK,144,465.14149409085985,86099,104649,18.55,A_same_1,1,False,#1 ecg baseline,#1 ecg baseline end
 226,2024_12_17_226.txt,OK,233,514.1843971631206,13299,40499,27.2,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 227,2024_12_17_227.txt,OK,172,522.2171323866239,13099,32849,19.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 228,2024_12_17_228.txt,OK,192,574.4072978798055,13349,33449,20.1,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-229,2024_12_17_229.txt,OK,219,566.9700910273082,21199,44499,23.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+229,2024_12_17_229.txt,OK,219,566.9455160157773,21199,44499,23.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 230,2024_12_17_230.txt,OK,142,532.946957288648,10899,26849,15.95,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-231,2024_12_18_231.txt,OK,322,536.7444193629295,222099,258099,36.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-232,2024_12_18_232.txt,OK,153,387.39274488148845,18849,42999,24.15,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+231,2024_12_18_231.txt,OK,322,536.729461598484,222099,258099,36.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+232,2024_12_18_232.txt,OK,132,336.63111910574327,18849,42999,24.15,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 233,2024_12_18_233.txt,OK,229,578.2154782535188,68049,91799,23.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-234,2024_12_18_234.txt,OK,194,579.1447861965491,70349,90399,20.05,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-235,2024_12_18_235.txt,OK,181,527.8592375366569,86599,107099,20.5,A_same_*,1,True,#* ecg baseline,#* ecg baseline end
+234,2024_12_18_234.txt,OK,192,573.1719515854757,70349,90399,20.05,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+235,2024_12_18_235.txt,OK,183,533.7243401759531,86599,107099,20.5,A_same_*,1,True,#* ecg baseline,#* ecg baseline end
 236,2024_12_18_236.txt,OK,190,573.1614859742228,33849,53849,20.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 237,2024_12_18_237.txt,OK,220,552.8441602154157,30649,54449,23.8,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 238,2024_12_18_238.txt,OK,244,528.1460552053901,35149,62899,27.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-239,2024_12_18_239.txt,OK,393,542.6481784832614,194799,238249,43.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-240,2024_12_18_240.txt,OK,177,553.6041939711665,32349,51649,19.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-241,2024_12_19_241.txt,OK,156,519.6982397317687,24499,42499,18.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-242,2024_12_19_242.txt,OK,175,531.2706732481807,41099,60849,19.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+239,2024_12_18_239.txt,OK,394,544.0324850610249,194799,238249,43.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+240,2024_12_18_240.txt,OK,174,544.167758846658,32349,51649,19.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+241,2024_12_19_241.txt,OK,156,519.7272828881189,24499,42499,18.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+242,2024_12_19_242.txt,OK,175,531.2436393242418,41099,60849,19.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 243,2024_12_19_243.txt,OK,192,491.7188706770788,12499,35899,23.4,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-244,2024_12_19_244.txt,OK,287,561.0226566842122,64199,94899,30.7,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-245,2024_12_19_245.txt,OK,254,507.62439807383623,62749,92749,30.0,D_single_30s,1,False,#* ecg baseline,
+244,2024_12_19_244.txt,OK,286,559.0610390034982,64199,94899,30.7,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+245,2024_12_19_245.txt,OK,230,459.47030497592294,62749,92749,30.0,D_single_30s,1,False,#* ecg baseline,
 246,2024_12_19_246.txt,OK,310,468.72629822521105,16749,56499,39.75,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 247,2024_12_19_247.txt,OK,184,550.8176984047357,25449,45449,20.0,A_same_2,1,False,#2 ecg baseline,#2 ecg baseline end
 248,2024_12_19_248.txt,OK,161,509.933071284394,30299,49199,18.9,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 249,2024_12_19_249.txt,OK,173,507.10038818731266,49999,70449,20.45,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-250,2024_12_19_250.txt,OK,174,513.9377135218102,23099,43399,20.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+250,2024_12_19_250.txt,OK,175,516.9084517502599,23099,43399,20.3,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 251,2024_12_20_251.txt,OK,162,522.6141527807833,13599,32099,18.5,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 252,2024_12_20_252.txt,OK,184,560.2612511480763,48299,67949,19.65,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 253,2024_12_20_253.txt,OK,185,524.7896563198175,50049,71299,21.25,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
 254,2024_12_20_254.txt,OK,174,504.9129292732756,96799,117449,20.65,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-255,2024_12_20_255.txt,OK,254,546.8693709921464,14299,42149,27.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-256,2024_12_20_256.txt,OK,136,494.05306495882894,20499,37049,16.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-257,2024_12_20_257.txt,OK,179,562.0756802273564,59349,78399,19.05,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-258,2024_12_20_258.txt,OK,235,530.9533714026396,15899,42449,26.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-259,2024_12_20_259.txt,OK,195,506.814124613576,24249,47249,23.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
-260,2024_12_20_260.txt,OK,165,551.4149621742785,125749,143699,17.95,A_same_1,1,False,#1 ecg baseline,#1 ecg baseline end
+255,2024_12_20_255.txt,OK,253,544.7078319763672,14299,42149,27.85,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+256,2024_12_20_256.txt,OK,136,494.02293242254206,20499,37049,16.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+257,2024_12_20_257.txt,OK,178,560.6588533417802,59349,78399,19.05,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+258,2024_12_20_258.txt,OK,236,533.2224029043604,15899,42449,26.55,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+259,2024_12_20_259.txt,OK,192,498.9767927896547,24249,47249,23.0,A_same_*,1,False,#* ecg baseline,#* ecg baseline end
+260,2024_12_20_260.txt,OK,164,551.4208389715833,125749,143699,17.95,A_same_1,1,False,#1 ecg baseline,#1 ecg baseline end
