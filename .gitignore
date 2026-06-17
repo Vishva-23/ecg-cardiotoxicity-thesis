@@ -1,6 +1,3 @@
-# Claude config
-.claude/
-.claude
 
 # Sensitive animal data — kept local only, never committed
 data/
