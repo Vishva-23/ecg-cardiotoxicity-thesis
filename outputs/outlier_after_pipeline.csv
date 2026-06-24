@@ -1,0 +1,8 @@
+animal_id,source_file,rule_used,start_annotation,end_annotation,n_beats,heart_rate_bpm,heart_rate_no_notch_bpm,rr_mean_ms,rr_std_ms,r_amplitude_mv,qrs_duration_ms,j_wave_amplitude_mv,t_wave_amplitude_mv,qt_ms,qtc_ms,inverted,status,reason
+102,2024_11_01_102.txt,D_single_30s,#* ecg,,180,366.9,437.3,163.52,240.83,2.4661,6.0,0.9996,0.6051,64.53,50.46,False,NEEDS_REVIEW,HR 367 bpm below physiological 400-650 band
+107,2024_11_01_107.txt,D_single_30s,#* ecg,,150,303.1,140.3,197.98,395.33,3.1318,6.0,0.7619,0.5216,68.48,48.67,False,NEEDS_REVIEW,HR 303 bpm below physiological 400-650 band
+112,2024_11_13_112.txt,A_same_*,#* ecg baseline,#* ecg baseline end,87,313.8,175.4,191.22,264.79,3.2894,6.0,1.4035,1.9789,58.7,42.45,True,NEEDS_REVIEW,HR 314 bpm below physiological 400-650 band
+115,2024_11_13_115.txt,A_same_*,#* ecg baseline,#* ecg baseline end,408,454.9,329.3,131.9,716.72,1.704,8.0,0.3176,0.9476,64.14,55.85,False,OK,
+117,2024_11_14_117.txt,B_cross,#* ecg baseline,#2 ecg baseline end,114,336.2,386.8,178.47,171.37,0.7962,9.0,0.2849,0.2176,56.25,42.11,False,NEEDS_REVIEW,HR 336 bpm below physiological 400-650 band
+126,2024_11_15_126.txt,D_single_30s,#* ecg baseline,,225,452.4,326.4,132.62,77.78,0.3001,14.0,0.1246,0.0279,65.22,56.63,True,OK,
+235,2024_12_18_235.txt,A_same_*,#* ecg baseline,#* ecg baseline end,183,533.7,527.9,112.42,10.56,0.1066,8.0,0.0181,-0.0011,38.55,36.36,False,OK,

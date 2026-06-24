@@ -1,0 +1,7 @@
+animal_id,file,old_start,old_start_s,new_start,new_start_s,window_moved,old_HR_bpm,new_HR_bpm,rr_std_chosen,n_passing,n_tried,quality_flag
+109,2024_11_01_109.txt,2591854,2591.85,2591854,2591.85,False,170.75,170.75,,0,16,no_clean_window_found
+111,2024_11_13_111.txt,266349,266.35,266349,266.35,False,283.58,283.58,,0,16,no_clean_window_found
+113,2024_11_13_113.txt,108599,108.6,108599,108.6,False,213.0,213.0,104.4,1,16,marginal_1/16
+114,2024_11_114.txt,37599,37.6,37599,37.6,False,205.35,205.35,,0,16,no_clean_window_found
+120,2024_11_14_120.txt,29899,29.9,29899,29.9,False,93.09,93.09,89.07,9,16,marginal_9/16
+121,2024_11_14_121.txt,53999,54.0,53999,54.0,False,124.81,124.81,63.55,3,16,marginal_3/16
