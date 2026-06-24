@@ -1,7 +1,0 @@
-animal_id,n_beats,rr_ms,hr_bpm,baseline_mv,noise_std_mv,t_peak_ms,t_peak_amp_mv,t_steep_ms,qt_tangent_ms,qtc_tangent_ms,qt_over_rr,qt_oldtemplate_ms,qt_oldperbeat_ms,reason,outlier
-125,94,119.91,500.4,-0.0078,0.00627,89.0,0.0434,92.0,94.2,86.02,0.786,41.0,91.21,ok,False
-157,152,103.02,582.4,-0.0128,0.05685,81.0,-0.0534,,,,,47.0,68.07,no_measurable_T,False
-201,208,120.17,499.3,-0.0199,0.01791,81.0,-0.0718,,,,,44.0,70.36,no_measurable_T,False
-249,173,118.32,507.1,-0.0193,0.01139,84.0,0.0312,87.0,91.84,84.43,0.776,40.0,87.68,ok,False
-232,287,102.67,584.4,-0.0055,0.02709,87.0,0.0272,,,,,40.0,96.35,no_measurable_T,False
-115,208,95.62,627.5,0.3303,0.28776,60.0,-0.8947,77.0,76.47,78.2,0.8,85.0,65.91,OUTLIER/ok,True
