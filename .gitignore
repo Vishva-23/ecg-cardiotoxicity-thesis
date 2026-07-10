@@ -20,3 +20,13 @@ notebooks/.ipynb_checkpoints/
 # Python cache
 __pycache__/
 *.pyc
+
+# raw text data files (but keep requirements.txt)
+*.txt
+!requirements.txt
+
+# stray duplicate notebooks
+1783690908556_*.ipynb
+
+# diagnostic scripts not part of the pipeline
+notebooks/noise_check.py
