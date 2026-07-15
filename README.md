@@ -20,6 +20,10 @@ Run in order:
   **data-quality** split (clean vs irregular), not the 5 treatment arms. The
   treatment question requires **supervised** analysis against the withheld
   metadata; this note explains why, what was tried, and the solution.
+- [Why supervised analysis is required — an evidence log](docs/why_supervised_is_required.md)
+  — the reproducible battery behind that conclusion: 3 clustering algorithms ×
+  5 cluster counts, outlier-removal re-analysis, and a PCA variance check, all
+  showing only a data-quality split (k=2) and no treatment structure (k=5).
 
 ## How to run
 
