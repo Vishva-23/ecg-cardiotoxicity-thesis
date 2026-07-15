@@ -13,6 +13,14 @@ Run in order:
 | `03_denoising_comparison.ipynb` | Compare denoising strategies; quantify noise residuals and spectral quality |
 | `04_healthy_template.ipynb` | Construct a healthy-animal beat template; compute distance-to-healthy metric for each recording |
 
+## Findings
+
+- [Why the ECG features do not cluster into treatment groups](docs/clustering_negative_result.md)
+  — a documented negative result. Unsupervised clustering recovers only a
+  **data-quality** split (clean vs irregular), not the 5 treatment arms. The
+  treatment question requires **supervised** analysis against the withheld
+  metadata; this note explains why, what was tried, and the solution.
+
 ## How to run
 
 ```bash
