@@ -24,6 +24,10 @@ Run in order:
   — the reproducible battery behind that conclusion: 3 clustering algorithms ×
   5 cluster counts, outlier-removal re-analysis, and a PCA variance check, all
   showing only a data-quality split (k=2) and no treatment structure (k=5).
+- [Corrections and methods](docs/corrections_and_methods.md) — what the QT and
+  R-amplitude fixes changed (QT median 72.7 → 43.9 ms; QTc → 41.2 ms, matching
+  mouse literature), why the PCA moved after correcting the values, and the
+  denoising comparison behind the Butterworth + notch choice.
 
 ## How to run
 
