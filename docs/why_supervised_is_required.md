@@ -81,10 +81,11 @@ separate on ECG features alone.
 
 Therefore the treatment question — *does ethanolamine protect against
 doxorubicin cardiotoxicity?* — can only be answered by **supervised analysis
-against the treatment labels** (ANOVA / LDA / PLS-DA + dose-response), which is
-implemented and ready in `supervised_group_analysis.py`. It will run the moment
-the treatment-group metadata is released; until then, no supervised result is
-possible, by construction.
+against the treatment labels**: testing each ECG parameter across the treatment
+groups directly, with sex and study as factors, and examining the dose-response
+across the three ethanolamine doses. That analysis requires the treatment-group
+metadata; until it is released, no supervised result is possible, by
+construction.
 
 *This is a genuine, defensible negative result for the unsupervised stage — and
 the correct methodological justification for the supervised design.*
