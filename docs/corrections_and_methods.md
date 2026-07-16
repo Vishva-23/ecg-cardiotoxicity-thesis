@@ -9,6 +9,14 @@ recomputed features (n = 117 animals).
 
 ![QT before/after histogram and PCA old-vs-new shift](corrections_before_after.png)
 
+> ⚠️ **Note on the notebook's rendered outputs.** The fixes described here are
+> applied to the **code** in `02_beat_averaging_and_clustering.ipynb`, but that
+> notebook's **stored outputs were not regenerated** — the plots and numbers
+> displayed in the committed `.ipynb` still show the **old, pre-fix** values.
+> Run **Kernel → Restart Kernel and Run All Cells** to refresh them. The
+> corrected values are the ones in this document and in
+> `code/corrections_before_after.py`.
+
 ---
 
 ## 1. QT interval — was over-estimated, now corrected
