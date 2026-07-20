@@ -28,6 +28,11 @@ Run in order:
   R-amplitude fixes changed (QT median 72.7 → 43.9 ms; QTc → 41.2 ms, matching
   mouse literature), why the PCA moved after correcting the values, and the
   denoising comparison behind the Butterworth + notch choice.
+- [Pipeline validation and problem-animal triage](docs/pipeline_validation_and_triage.md)
+  ([Word version](docs/ECG_pipeline_validation_report.docx)) — confirmation the
+  pipeline works on the 83 clean animals, FFT filter verification, a triage of the
+  34 flagged animals (keep / recover / physiology / drop), the window-relocation
+  recovery analysis, and point-by-point answers to the supervisor's questions.
 
 ## How to run
 
