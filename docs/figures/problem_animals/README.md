@@ -1,80 +1,96 @@
 # Problem animals — raw vs filtered (all 34 flagged)
 
-One figure per flagged recording (`problem_A<id>.png`). Each shows the raw signal
-and the filtered signal overlaid with detected R-peaks (top), and what the filter
-removed (bottom).
+One figure per flagged recording (`problem_A<id>.png`): raw and filtered overlaid
+with detected R-peaks (top), and what the filter removed (bottom). **The plots show
+a 1-second slice for legibility; the table below is computed over the full baseline
+window.**
 
-**How to read the numbers.** `corr` is the correlation between the raw and the
-filter-only output — high means the filter preserved the shape. `% removed` is the
-fraction of the signal the filter stripped as noise/drift. For reference, **clean
-animals sit at corr 0.93–0.97 with only 26–39% removed**. Values above 100% occur
-when the raw is dominated by noise that is anti-correlated with the recovered
-signal.
+Regenerate with [`code/problem_animal_triage.py`](../../../code/problem_animal_triage.py).
 
-Sorted by severity (least to most affected).
+> **Correction notice.** An earlier version of this page grouped these animals by
+> raw-vs-filtered correlation and "% signal removed". Those numbers were computed
+> over only the **first 1 second** of baseline windows that are 11–88 s long, so
+> they were unrepresentative, and the grouping derived from them was wrong. On full
+> windows those metrics separate clean from flagged only weakly (clean median 43%
+> removed vs flagged 72%, with heavy overlap — 61 of 83 clean animals exceed the
+> best flagged animal). **They are not a reliable triage criterion and are no longer
+> used here.** The triage below is keyed on `rr_cv`, `status`, and heart rate — the
+> pipeline's own metrics, all computed over the full window.
 
-## 🟢 Barely flagged — essentially clean (6)
+## Triage criteria
 
-Filter behaves perfectly; these only tripped the `rr_cv > 0.15` rhythm gate.
-Candidates to **keep** under a two-tier gate.
+| tier | rule |
+|---|---|
+| **KEEP** | `status == OK`, HR within 300–700 bpm, `rr_cv ≤ 0.25` — mildly over the 0.15 gate only |
+| **REVIEW** | `status == OK`, HR in range, `0.25 < rr_cv ≤ 0.60` — needs a judgement call |
+| **DROP** | `status != OK`, **or** HR outside 300–700, **or** `rr_cv > 0.60` |
 
-| animal | corr | % removed | HR | beats |
+## 🟢 KEEP (13) — mildly irregular, otherwise sound
+
+Candidates to retain under a two-tier gate.
+
+| animal | HR | rr_cv |
+|---|---|---|
+| 125 | 500 | 0.151 |
+| 129 | 525 | 0.156 |
+| 134 | 598 | 0.169 |
+| 127 | 560 | 0.185 |
+| 245 | 459 | 0.193 |
+| 252 | 560 | 0.206 |
+| 225 | 465 | 0.211 |
+| 106 | 465 | 0.216 |
+| 259 | 499 | 0.217 |
+| 123 | 503 | 0.221 |
+| 160 | 542 | 0.222 |
+| 119 | 578 | 0.226 |
+| 240 | 544 | 0.234 |
+
+## 🟡 REVIEW (6) — moderately irregular, HR still physiological
+
+Rhythm is irregular but heart rate is plausible, so this may be **real rhythm
+variability rather than artifact** — a physiological judgement (see the open
+question for Roisin in the main report).
+
+| animal | HR | rr_cv |
+|---|---|---|
+| 234 | 573 | 0.264 |
+| 139 | 686 | 0.304 |
+| 130 | 517 | 0.310 |
+| 105 | 451 | 0.445 |
+| 131 | 462 | 0.479 |
+| 126 | 452 | 0.587 |
+
+## 🔴 DROP (15) — unusable
+
+Failed status, non-physiological heart rate, or extreme irregularity.
+
+| animal | status | HR | rr_cv | why |
 |---|---|---|---|---|
-| 117 | 0.99 | 17 | 336 | 114 |
-| 129 | 0.98 | 19 | 525 | 127 |
-| 245 | 0.98 | 23 | 459 | 230 |
-| 131 | 0.97 | 24 | 462 | 230 |
-| 139 | 0.97 | 25 | 686 | 368 |
-| 134 | 0.95 | 32 | 598 | 873 |
+| 113 | NEEDS_REVIEW | 213 | 0.647 | HR below range |
+| 101 | OK | 400 | 0.650 | rr_cv > 0.6 |
+| 121 | NEEDS_REVIEW | 125 | 0.674 | HR far below range |
+| 151 | OK | 344 | 0.825 | rr_cv > 0.6 |
+| 109 | NEEDS_REVIEW | 171 | 0.934 | HR below range |
+| 232 | OK | 337 | 0.937 | rr_cv > 0.6 |
+| 114 | NEEDS_REVIEW | 205 | 0.955 | HR below range |
+| 117 | OK | 336 | 0.960 | rr_cv > 0.6 |
+| 120 | NEEDS_REVIEW | **93** | 1.015 | HR impossible for a mouse |
+| 112 | OK | 314 | 1.385 | extreme irregularity |
+| 103 | OK | 340 | 1.406 | extreme irregularity |
+| 102 | OK | 367 | 1.473 | extreme irregularity |
+| 111 | NEEDS_REVIEW | 284 | 1.527 | HR below range + extreme |
+| 107 | OK | 303 | 1.997 | extreme irregularity |
+| 115 | OK | 455 | **5.434** | no coherent rhythm |
 
-## 🟡 Noisy but signal present (18)
+## Recovery (window relocation)
 
-Real beats visible. Window-relocation recovery was attempted on this group —
-only **123** fully recovered (rr_cv 0.220 → 0.089) and **126** was borderline.
-The rest are irregular *throughout* the recording, which points to real
-physiology or a genuinely poor recording rather than a bad measurement window.
+Relocating to the cleanest window in the same recording was attempted. Only
+**123** improved to below the 0.15 gate (rr_cv 0.220 → 0.089, HR 503 → 502 —
+consistent, so it is the same animal's rhythm in a cleaner stretch). **126** found
+a clean window (0.587 → 0.047) but its HR shifted 452 → 559, so it needs manual
+review. For the rest, relocation did **not** reduce `rr_cv` — the irregularity is
+spread across the whole recording, meaning it is intrinsic to the animal's rhythm
+rather than a bad measurement window.
 
-| animal | corr | % removed | HR | beats | note |
-|---|---|---|---|---|---|
-| 225 | 0.93 | 43 | 465 | 144 | |
-| 111 | 0.92 | 43 | 284 | 72 | erratic bursts + gaps |
-| 130 | 0.91 | 44 | 517 | 565 | |
-| 126 | 0.93 | 45 | 452 | 225 | **borderline recovery** |
-| 119 | 0.92 | 45 | 578 | 248 | no clean window found |
-| 106 | 0.89 | 51 | 465 | 232 | |
-| 121 | 0.89 | 52 | 125 | 26 | HR below physiological range |
-| 123 | 0.86 | 52 | 503 | 305 | ✅ **recovered** |
-| 151 | 0.93 | 55 | 344 | 125 | |
-| 105 | 0.84 | 56 | 451 | 291 | |
-| 232 | 0.84 | 56 | 337 | 132 | |
-| 112 | 0.87 | 57 | 314 | 87 | polarity inverted |
-| 160 | 0.84 | 61 | 542 | 428 | |
-| 234 | 0.87 | 62 | 573 | 192 | |
-| 252 | 0.80 | 62 | 560 | 184 | |
-| 259 | 0.89 | 64 | 499 | 192 | |
-| 101 | 0.75 | 70 | 400 | 196 | |
-| 114 | 0.76 | 70 | 205 | 56 | polarity inverted, slow |
-
-## 🔴 Severe — mostly noise (10)
-
-corr < 0.75 and/or > 80% of the trace is noise. Recommended to **drop**.
-
-| animal | corr | % removed | HR | beats | note |
-|---|---|---|---|---|---|
-| 113 | 0.62 | 83 | 213 | 46 | polarity inverted |
-| 102 | 0.51 | 88 | 367 | 180 | |
-| 103 | 0.43 | 93 | 340 | 157 | |
-| 109 | 0.41 | 94 | 171 | 171 | HR below range |
-| 120 | 0.39 | 97 | **93** | 27 | inverted; HR impossible for a mouse |
-| 240 | 0.78 | 99 | 544 | 174 | |
-| 107 | 0.21 | 102 | 303 | 150 | |
-| 115 | 0.74 | 103 | 455 | 408 | |
-| 127 | 0.74 | 105 | 560 | 115 | |
-| 125 | 0.41 | 131 | 500 | 94 | rr_cv sits exactly on the 0.15 threshold |
-
----
-
-Reproduced by the pipeline functions in
-[`02_beat_averaging_and_clustering.ipynb`](../../../notebooks/02_beat_averaging_and_clustering.ipynb).
 See [pipeline_validation_and_triage.md](../../pipeline_validation_and_triage.md)
-for the full triage and recovery analysis.
+for the full analysis.

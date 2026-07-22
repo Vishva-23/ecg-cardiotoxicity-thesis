@@ -16,10 +16,10 @@ from the notebooks and the scripts in `code/`.
 - **The filter is verified.** It removes the 50 Hz mains oscillation (Luke's
   "oscillation across the trace") and out-of-band noise while preserving the
   heartbeat — shown in both the time domain and the FFT power spectrum.
-- **The 34 "problem" animals are a gradient, not a wall:** ~6 are essentially
-  clean, 1–2 are recoverable by relocating the analysis window, ~16 are irregular
-  *throughout* the recording (a physiological question, not a data problem), and
-  ~10 are genuinely too noisy to use.
+- **The 34 "problem" animals are a gradient, not a wall:** 13 are only mildly
+  irregular and can be kept, 6 need a physiological judgement (real rhythm
+  variability vs artifact), and 15 are genuinely unusable. One (123) recovers
+  cleanly by relocating the analysis window.
 - **Two items are for the supervisors, not for data processing:** whether the
   irregular-throughout animals reflect real arrhythmia (Roisin), and the scope
   question of re-examining every recording from scratch (Luke/Roisin).
@@ -78,22 +78,37 @@ so it is not mistaken for QRS duration.
 
 ## 5. Triage of the 34 flagged animals
 
-The 34 flagged recordings span a gradient, measured by raw-vs-filter correlation
-and the fraction of the signal that is noise:
+The 34 flagged recordings are triaged on `rr_cv`, `status`, and heart rate — the
+pipeline's own metrics, all computed over the full baseline window.
 
-| group | count | criterion | action |
+| tier | count | rule | action |
 |---|---|---|---|
-| 🟢 barely-flagged (essentially clean) | 6 | corr 0.95–0.99, 17–32% removed | keep via a two-tier gate |
-| ✅ recoverable by window relocation | 1–2 | a cleaner window exists in the recording | move to clean set after review |
-| 🟡 irregular throughout | ~16 | irregularity spread across the whole recording | **physiological question — Roisin's call** |
-| 🔴 severe / mostly noise | ~10 | corr < 0.75 and/or > 80% of signal is noise | drop |
+| 🟢 **KEEP** | **13** | status OK, HR 300–700, `rr_cv ≤ 0.25` | retain under a two-tier gate |
+| 🟡 **REVIEW** | **6** | status OK, HR in range, `0.25 < rr_cv ≤ 0.60` | judgement call — may be real rhythm variability |
+| 🔴 **DROP** | **15** | status ≠ OK, **or** HR outside 300–700, **or** `rr_cv > 0.60` | exclude |
 
-**Barely-flagged (6):** 117, 129, 131, 134, 139, 245. Filter behaves perfectly;
-they only tripped the `rr_cv > 0.15` gate on mild irregularity.
+**KEEP (13):** 106, 119, 123, 125, 127, 129, 134, 160, 225, 240, 245, 252, 259 —
+only mildly over the 0.15 gate, otherwise sound.
 
-**Severe (≈10):** 102, 103, 107, 109, 113, 115, 120, 125, 127, 240. Example —
-Animal 120: raw and filtered barely track (corr 0.39), 97% of the trace is noise,
-HR 93 bpm (impossible for an anaesthetised mouse), polarity inverted. Unusable.
+**REVIEW (6):** 105, 126, 130, 131, 139, 234 — irregular but with plausible heart
+rates, so this may be **real rhythm variability rather than artifact**. This is the
+physiological question for Roisin.
+
+**DROP (15):** 101, 102, 103, 107, 109, 111, 112, 113, 114, 115, 117, 120, 121,
+151, 232. Example — Animal 120: HR 93 bpm (impossible for an anaesthetised mouse),
+`rr_cv` 1.015, status NEEDS_REVIEW, polarity inverted. Animal 115 has `rr_cv`
+5.434 — no coherent rhythm at all.
+
+> **Correction notice.** An earlier version of this section grouped the 34 by
+> raw-vs-filtered correlation and "% signal removed" (reported as 6 keep / ~18
+> recoverable / ~10 drop). Those two metrics were computed over only the **first
+> 1 second** of baseline windows that are 11–88 s long, making them
+> unrepresentative. Recomputed over full windows they separate clean from flagged
+> only weakly (clean median 43% removed vs flagged 72%, with 61 of 83 clean
+> animals exceeding the best flagged animal), so they are **not a valid triage
+> criterion**. The grouping above replaces it and uses only full-window pipeline
+> metrics. The pipeline's own findings (83 clean / 34 flagged, heart rate, `rr_cv`,
+> QTc) were always computed over full windows and are unaffected.
 
 ## 6. Recovery analysis (what "recovery" can and cannot do)
 
