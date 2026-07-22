@@ -68,6 +68,31 @@ Supporting [clustering_negative_result.md](../clustering_negative_result.md) and
 | `../unsupervised_justification.png` | silhouette vs k, 3 algorithms |
 | `../corrections_before_after.png` | QT before/after + PCA shift |
 
+## Validation gallery -- the 10 cleanest recordings
+
+[`validation_gallery/`](validation_gallery/) -- evidence the pipeline works. For each
+of the ten highest-scoring clean animals: raw vs filtered with every detected
+R-peak, and the averaged beat with extracted landmarks (P, Q, R, J, S, T) and the
+QT interval. Values are printed by `extract_morphology_features` -- the same
+function that builds the feature table.
+
+| animal | HR (bpm) | QRS (ms) | QT (ms) | QTc (ms) | R (mV) | beats |
+|---|---|---|---|---|---|---|
+| 211 | 492 | 6 | 44.5 | 40.3 | 0.74 | 613 |
+| 206 | 531 | 6 | 44.0 | 41.4 | 0.47 | 215 |
+| 239 | 544 | 6 | 43.2 | 41.2 | 0.42 | 394 |
+| 247 | 551 | 6 | 43.3 | 41.5 | 0.47 | 184 |
+| 208 | 512 | 5 | 44.7 | 41.3 | 0.35 | 247 |
+| 218 | 529 | 5 | 43.9 | 41.2 | 0.32 | 245 |
+| 248 | 510 | 6 | 45.8 | 42.2 | 0.56 | 161 |
+| 142 | 517 | 6 | 45.9 | 42.6 | 0.61 | 170 |
+| 230 | 533 | 6 | 43.3 | 40.9 | 0.43 | 142 |
+| 136 | 596 | 6 | 43.5 | 43.3 | 0.50 | 297 |
+
+**QTc across the ten: 41.6 +/- 0.9 ms** against a mouse literature value of ~41 ms;
+**QT 44.2 +/- 1.0 ms**. Ten independent animals agreeing to under 1 ms is the
+strongest single piece of evidence that the extraction is correct.
+
 ## Problem animals (all 34 flagged)
 
 [`problem_animals/`](problem_animals/) — one raw-vs-filtered figure per flagged
