@@ -175,10 +175,6 @@ report cites.)
 
 ![FFT power spectrum overlaid](figures/fft_overlay_A201.png)
 
-**Clean beat — labelled landmarks, and R-FWHM vs true QRS**
-
-![Labelled clean beat](figures/clean_beat_qrs_A201.png)
-
 **Clean animals — raw vs filtered** (correlation 0.93–0.97, only 26–39% removed)
 
 ![Clean animal 133](figures/clean_rawvsfilt_A133.png)
