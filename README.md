@@ -13,13 +13,6 @@ Run in order:
 | `03_denoising_comparison.ipynb` | Compare denoising strategies; quantify noise residuals and spectral quality |
 | `04_healthy_template.ipynb` | Construct a healthy-animal beat template; compute distance-to-healthy metric for each recording |
 
-## How the pipeline works
-
-- [The ECG pipeline — what it does, how it works, and what changed](docs/pipeline_explained.md)
-  — a stage-by-stage description of the processing chain, why mouse ECG needs a
-  custom detector and a 150 Hz band, and a precise before/after changelog of the
-  QT and R-amplitude corrections.
-
 ## Findings
 
 - [Why the ECG features do not cluster into treatment groups](docs/clustering_negative_result.md)
