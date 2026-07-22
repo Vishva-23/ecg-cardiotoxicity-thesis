@@ -4,7 +4,7 @@ Reproducible Python pipeline for preprocessing and multivariate analysis of prec
 
 ## Notebooks
 
-Run in order:
+Run in order :
 
 | Notebook | What it does |
 |----------|-------------|
